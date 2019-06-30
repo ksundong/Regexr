@@ -1,0 +1,8 @@
+parameter: total_val, max_integer_part_val(?), max_decimal_part_val
+MariaDB's Decimal Data type expression DECIMAL(length, max_decimal_part_val)
+e.g.) DECIMAL(16, 4) meaning 0.0001 ~ 999999999999.9999
+
+^((-?)(\d{1,(total_val - max_decimal_part_val)})((\.\d{0,(max_decimal_part_val)})?))$
+
+KOR
+^((-?)(\d{1,(전체 값 - 소수부 최대값)})((\.\d{0,소수부 최대값})?))$
